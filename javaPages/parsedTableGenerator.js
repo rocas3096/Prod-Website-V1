@@ -50,7 +50,7 @@ function generateParsedTable() {
   // Generate navigation bar HTML
   const navigationBar = `
     <div class="navigation-bar">
-      <a href="./Home.html" class="nav-link">Home</a>
+      <a href="../index.html" class="nav-link">Home</a>
       <a href="Data.html" class="nav-link">Data</a>
     </div>
   `;

@@ -12,7 +12,7 @@ function generateDataTable() {
   // Generate navigation bar HTML
   const navigationBar = `
     <div class="navigation-bar">
-      <a href="../Home.html" class="nav-link">Home</a>
+      <a href="../index.html" class="nav-link">Home</a>
       <a href="ParsedData.html" class="nav-link">Filter</a>
     </div>
   `;
