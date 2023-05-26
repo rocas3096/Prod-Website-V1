@@ -1,13 +1,16 @@
-const fs = require('fs');
-const excelParser = require('../functions/excelParser');
+const fs = require("fs");
+const excelParser = require("../functions/excelParser");
 
 function generateDataTable() {
-  const excelData = excelParser.readExcelFile('Prod Tracker Updated 5-25.xlsm');
+  const excelData = excelParser.readExcelFile("Prod Tracker Updated 5-25.xlsm");
 
   // Perform filtering or calculations specific to data table
   // Example: Include all rows and calculate the total sum of "Presort Ivc" and "Presort Vcp"
   const dataTableData = excelParser.generateTableData(excelData);
-  const dataTableContent = excelParser.generateHTMLTableContent(dataTableData, 'excel-table');
+  const dataTableContent = excelParser.generateHTMLTableContent(
+    dataTableData,
+    "excel-table"
+  );
 
   // Generate navigation bar HTML
   const navigationBar = `
@@ -20,7 +23,7 @@ function generateDataTable() {
   // Combine navigation bar and data table content
   const htmlContent = navigationBar + dataTableContent;
 
-  const htmlFilePath = 'pages/Data.html';
+  const htmlFilePath = "pages/Data.html";
   fs.writeFileSync(htmlFilePath, htmlContent);
 
   console.log(`Data table written to ${htmlFilePath}`);

@@ -1,45 +1,44 @@
 body {
-    margin: 0;
-    height: 100vh; /* Set the body height to the full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  height: 100vh; /* Set the body height to the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .centered-text {
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 20px; /* Add margin below the text */
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add margin below the text */
 }
 
 .start-button {
-    font-size: 24px;
-    padding: 10px 20px;
+  font-size: 24px;
+  padding: 10px 20px;
 }
 
 .navigation-bar {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-button {
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
